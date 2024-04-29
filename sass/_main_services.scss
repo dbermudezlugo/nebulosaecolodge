@@ -1,0 +1,26 @@
+/* main_services */
+
+.contenedor-alojamiento {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .alojamiento1, .observatorio {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .alojamiento1 h2, .observatorio h2 {
+    color: #eceff1;
+  }
+  
+  .alojamiento1 h2, .observatorio h2, .alojamiento1 p, .observatorio p, .alojamiento1 img, .observatorio img {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  
+  .contenedor-alojamiento p, .observatorio p {
+    text-align: center;
+    color: #D2C8C8;
+    width: 50%;
+  }

@@ -1,0 +1,204 @@
+/* MEDIA QUERIES */
+/* Tablet */
+@media only screen and (max-width: 768px) {
+  .header {
+      margin-bottom: 100px;
+  }
+  .nav-links {
+      flex-direction: column;
+      text-align: center;
+      padding: 0;
+      position: absolute;
+      width: 100%;
+      top: 70px;
+      left: 0;
+  }
+  .nav-links li {
+      margin: 5px 0;
+  }
+  .btn {
+      display: inline-block;
+      margin: -50px auto 10px;
+  }
+
+  .footer {
+      flex-direction: column;
+      margin-top: 100px;
+      justify-content: center;
+  }
+  .ubicacion,
+  .redes {
+      text-align: center;
+  }
+  .show-nav {
+      display: block;
+  }
+  /*Index*/
+  .contenido {
+      padding: 10px;
+  }
+  .logo img {
+      max-width: 100%;
+      height: auto;
+      padding-top: 30px;
+  }
+  /*Pricing*/
+  .ofertas{
+      flex-direction: column;
+      padding-top: 80px;
+  }
+
+  .ofertas iframe {
+      max-width: 100%;
+  }
+  .imagenes img {
+      max-height: 40%;
+      display: block;
+      margin: 0 auto;
+  }
+  /* Main Services */
+  .contenedor-superior,
+  .contenedor-inferior {
+      grid-template-columns: repeat(1, 1fr);
+  }
+  .contenedor-alojamiento img,
+  .observatorio img {
+      max-width: 100%;
+      height: auto;
+  }
+  /* Other Services */
+  .imagenes {
+      display: flex;
+      flex-direction: column;
+      margin: 20px;
+  }
+
+  .contactanos-os{
+      margin-bottom: 20px;
+  }
+
+  /* Pricing */
+  .orden-precios {
+      display: flex;
+      flex-direction: column;
+      max-width: 100%;
+      height: auto;
+  }
+
+  .container-os img {
+      max-width: 100%;
+      height: auto;
+  }
+
+  /* Contact Us */
+  .contactanos {
+      flex-direction: column;
+      padding: 25px;
+  }
+
+  .contactanos form{
+      margin-bottom: 40px;
+  }
+}
+
+/* Movil */
+@media only screen and (max-width: 320px) {
+  .header {
+      margin-bottom: 100px;
+  }
+  .nav-links {
+      flex-direction: column;
+      text-align: center;
+      padding: 0;
+      position: absolute;
+      width: 100%;
+      top: 70px;
+      left: 0;
+  }
+  .nav-links li {
+      margin: 5px 0;
+  }
+  .btn {
+      display: inline-block;
+      margin: -50px auto 10px;
+  }
+
+  .footer {
+      flex-direction: column;
+      margin-top: 100px;
+      justify-content: center;
+  }
+  .ubicacion,
+  .redes {
+      text-align: center;
+  }
+  .show-nav {
+      display: block;
+  }
+  /*Index*/
+  .contenido {
+      padding: 10px;
+  }
+  .logo img {
+      max-width: 100%;
+      height: auto;
+      padding-top: 30px;
+  }
+  /*Pricing*/
+  .ofertas{
+      flex-direction: column;
+      padding-top: 80px;
+  }
+
+  .ofertas iframe {
+      max-width: 100%;
+  }
+  .imagenes img {
+      max-height: 40%;
+      display: block;
+      margin: 0 auto;
+  }
+  /* Main Services */
+  .contenedor-superior,
+  .contenedor-inferior {
+      grid-template-columns: repeat(1, 1fr);
+  }
+  .contenedor-alojamiento img,
+  .observatorio img {
+      max-width: 100%;
+      height: auto;
+  }
+  /* Other Services */
+  .imagenes {
+      display: flex;
+      flex-direction: column;
+      margin: 20px;
+  }
+
+  .contactanos-os{
+      margin-bottom: 20px;
+  }
+
+  /* Pricing */
+  .orden-precios {
+      display: flex;
+      flex-direction: column;
+      max-width: 100%;
+      height: auto;
+  }
+
+  .container-os img {
+      max-width: 100%;
+      height: auto;
+  }
+
+  /* Contact Us */
+  .contactanos {
+      flex-direction: column;
+      padding: 25px;
+  }
+
+  .contactanos form{
+      margin-bottom: 40px;
+  }
+} 

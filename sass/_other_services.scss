@@ -1,0 +1,73 @@
+/* other_services */
+
+/* Aqui uso extend */
+
+.other-services {
+    text-align: center;
+    color: #D2C8C8;
+    padding: 20px;
+
+    h1 {
+        padding: 20px;
+        font-size: 36px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+        font-size: 36px;
+    }
+
+    .container-os {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 5px;
+        }
+    }
+
+    h2 {
+        text-align: center;
+    }
+}
+
+.ofertas {
+    @extend .other-services;
+}
+
+.imagenes {
+    @extend .other-services;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 6px;
+    display: flex;
+    justify-content: space-between;
+
+    figure {
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    figcaption {
+        font-size: 14px;
+        color: #D2C8C8;
+        margin-top: 10px;
+    }
+}
+
+.contactanos-os {
+    @extend .other-services;
+
+    padding: 20px 0;
+    text-align: center;
+}

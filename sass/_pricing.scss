@@ -1,0 +1,30 @@
+/* pricing */
+/* Aca hago uso de una variable para optimizar mi codigo*/
+$color-opcion: #D2C8C8;
+$color-titulo: white;
+$margin-vertical: 20px;
+
+.precios {
+    text-align: center;
+
+    h2 {
+        margin-top: $margin-vertical;
+        color: $color-titulo;
+        font-size: 42px;
+    }
+}
+
+.opcion1, .opcion2, .opcion3, .opcion4 {
+    margin-top: $margin-vertical;
+    text-align: center;
+    color: $color-opcion;
+}
+
+.opcion4 {
+    margin-bottom: $margin-vertical;
+}
+
+.contactanos-pricing {
+    text-align: center;
+    color: $color-titulo;
+}

@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital@0;1&display=swap");
+/*aqui hago uso de un mapa*/
+
+$fonts: (
+  family: "Public Sans, sans-serif",
+  size: 20px
+);
+
+$navbar: (
+  height: 100px,
+  padding: 5px 10%,
+  margin-top: 20px,
+  link-color: #eceff1,
+  link-hover-color: #FFCC00,
+  button: (
+    font-weight: 700,
+    color: #1b3039,
+    padding: 9px 25px,
+    background: #e2f1f8,
+    border: none,
+    border-radius: 50px,
+    cursor: pointer,
+    transition: all 0.3s ease 0s
+  ),
+  button-hover: (
+    background-color: #e2f1f8,
+    color: #FFCC00,
+    transform: scale(1.1)
+  )
+);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: map-get($fonts, family);
+    font-size: map-get($fonts, size);
+  }
+  
+  body {
+    background-position: center;
+    background-image: url("../assets/background.png");
+    background-size: cover;
+    margin-bottom: 200px;
+  }
+
+  /*nav bar*/
+  
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: map-get($navbar, height);
+    padding: map-get($navbar, padding);
+    margin-top: map-get($navbar, margin-top);
+  
+    .nav-links {
+      list-style: none;
+    }
+  
+    li {
+      display: inline-block;
+      padding: 0 20px;
+  
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  
+    a {
+      font-size: map-get($fonts, size);
+      color: map-get($navbar, link-color);
+      text-decoration: none;
+  
+      &:hover {
+        color: map-get($navbar, link-hover-color);
+      }
+    }
+  
+    .btn button {
+      @each $key, $value in map-get($navbar, button) {
+        #{$key}: $value;
+      }
+  
+      &:hover {
+        @each $key, $value in map-get($navbar, button-hover) {
+          #{$key}: $value;
+        }
+      }
+    }
+  }
+
+/* footer */
+
+%base-style {
+  color: white;
+}
+
+.footer {
+  @extend %base-style;
+  background-color: #262739;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  .social-icon,
+  .menu {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+    list-style: none;
+
+    .icon,
+    .menu-icon {
+      font-size: 20px;
+      display: inline-block;
+      margin: 5px 10px;
+      transition: 0.3s;
+      color: white;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    .icon {
+      font-size: 32px;
+
+      &:hover {
+        transform: translateY(-10px);
+      }
+    }
+  }
+
+  .text {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+}
